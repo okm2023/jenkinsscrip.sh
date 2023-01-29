@@ -1,4 +1,4 @@
-#!/bin/bash
+i#!/bin/bash
 
 # this script is only tested on ubuntu xenial
 
@@ -13,6 +13,8 @@ apt-get install docker-ce docker-ce-cli containerd.io
 systemctl enable docker
 systemctl start docker
 usermod -aG docker ubuntu
+#Extra Package
+apt-get install vim fit -y
 
 # run jenkins
 mkdir -p /var/jenkins_home
